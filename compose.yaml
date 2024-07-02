@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    database:
+        image: mysql:8.2
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: ads_service
+        ports:
+            - '127.0.0.1:3306:3306'
